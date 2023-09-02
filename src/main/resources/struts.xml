@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="InstantaFleet" namespace="/" extends="struts-default">
+        <action name="fleetAction" class="com.gr8erkay.instantafleet.FleetAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <action name="loginAction" class="com.gr8erkay.instantafleet.action.LoginAction">
+            <result name="success" type="redirect">welcomeAction</result>
+            <result name="input">/login.jsp</result>
+        </action>
+        <action name="welcomeAction" class="com.gr8erkay.instantafleet.action.WelcomeAction">
+            <result name="success">/welcome.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="addAction" class="com.gr8erkay.instantafleet.action.AddAction">
+            <result name="success" type="redirect">welcomeAction</result>
+            <result name="error">/error.jsp</result>
+            <result name="input">/addProduct.jsp</result>
+        </action>
+        <action name="updateDataAction" class="com.gr8erkay.instantafleet.action.UpdateDataAction">
+            <result name="success">/updateProduct.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="updateAction" class="com.gr8erkay.instantafleet.action.UpdateAction">
+            <result name="success" type="redirect">welcomeAction</result>
+            <result name="error">/error.jsp</result>
+            <result name="input">/updateProduct.jsp</result>
+        </action>
+        <action name="deleteAction" class="com.gr8erkay.instantafleet.action.DeleteAction">
+            <result name="success" type="redirect">welcomeAction</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="officeAction" class="com.gr8erkay.instantafleet.action.OfficeAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <action name="contactAction" class="com.gr8erkay.instantafleet.action.ContactAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <action name="registrationForm">
+            <result >/registration.jsp</result>
+        </action>
+        <action name="reservationForm">
+            <result type="redirect">reservationFormAction</result>
+        </action>
+
+        <action name="loginPage">
+            <result>/login.jsp</result>
+        </action>
+
+        <action name="testForm">
+            <result>/test.jsp</result>
+        </action>
+
+        <action name="registrationAction" class="com.gr8erkay.instantafleet.action.RegistrationAction">
+            <result name="success">/success.jsp</result>
+            <result name="input">/registration.jsp</result>
+        </action>
+        <action name="reservationAction" class="com.gr8erkay.instantafleet.action.ReservationAction">
+            <result>/reservation.jsp</result>
+            <result name="success">/success.jsp</result>
+            <result name="input">/reservation.jsp</result>
+            <result name="error">/reservation.jsp</result>
+        </action>
+        <action name="reservationFormAction" class="com.gr8erkay.instantafleet.action.ReservationFormAction">
+            <result name="success">/reservation.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+    </package>
+
+</struts>
