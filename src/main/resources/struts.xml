@@ -44,6 +44,10 @@
             <result name="success">/success.jsp</result>
             <result name="error">/error.jsp</result>
         </action>
+        <action name="reservationPageAction" class="com.gr8erkay.instantafleet.action.ReservationPageAction">
+            <result name="success">/reservationPage.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
 
         <action name="registrationForm">
             <result >/registration.jsp</result>
@@ -66,7 +70,7 @@
         </action>
         <action name="reservationAction" class="com.gr8erkay.instantafleet.action.ReservationAction">
             <result>/reservation.jsp</result>
-            <result name="success">/success.jsp</result>
+            <result name="success" type="redirect">reservationPageAction</result>
             <result name="input">/reservation.jsp</result>
             <result name="error">/reservation.jsp</result>
         </action>
