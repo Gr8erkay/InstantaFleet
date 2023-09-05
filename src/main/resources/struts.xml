@@ -68,6 +68,10 @@
             <result name="success">/success.jsp</result>
             <result name="input">/registration.jsp</result>
         </action>
+        <action name="tripAction" class="com.gr8erkay.instantafleet.action.TripAction">
+            <result name="success">/success.jsp</result>
+            <result name="input">/trip.jsp</result>
+        </action>
         <action name="reservationAction" class="com.gr8erkay.instantafleet.action.ReservationAction">
             <result>/reservation.jsp</result>
             <result name="success" type="redirect">reservationPageAction</result>

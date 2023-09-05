@@ -1,10 +1,7 @@
 package com.gr8erkay.instantafleet.dao;
 
 import com.gr8erkay.instantafleet.dbutil.DBUtil;
-import com.gr8erkay.instantafleet.entity.Office;
 import com.gr8erkay.instantafleet.entity.Reservation;
-import com.gr8erkay.instantafleet.Util.Status;
-import com.gr8erkay.instantafleet.entity.User;
 
 import java.sql.*;
 import java.util.ArrayList;
